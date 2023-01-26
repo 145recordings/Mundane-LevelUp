@@ -1,0 +1,146 @@
+body{
+    font-family: fantasy;
+    padding: 0;
+    margin: 0;
+    background-color: pink;
+}
+
+.header{
+    text-align: center;
+    background-image: linear-gradient(teal,pink)
+}
+
+.banner{
+    height: 100px;
+}
+
+.index-content{
+    display: grid;
+    width: 375px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    box-shadow: 5px 5px 5px;
+    
+    grid-template-areas: 
+        'leftsidebar stats'
+        'levelup levelup';
+}
+
+
+
+.profile{
+    grid-area: leftsidebar;
+    padding: 10px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-areas: 
+        'avatar welcome'
+        'level experience';
+    justify-content: center;
+    align-content: center;
+    
+    background-color: darkgrey;
+}
+
+#avatar{
+    grid-area: avatar;
+    width: 50px;
+}
+
+#welcome{
+    grid-area: welcome;
+    
+}
+
+#level{
+    grid-area: level;
+    padding-right: 25px;
+}
+#experience{
+    grid-area: experience;
+}
+
+.stats{
+    grid-area: stats;
+}
+
+.whiteHeader{
+    color: white;
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+.stats-list{
+    color: white;
+}
+
+.options-dropdown{
+    position: relative;
+}
+
+#options-content{
+    position: absolute;
+    display: none;
+}
+#options-content ul{
+    list-style: none;
+}
+
+#optionsButton{
+    background-color: lightseagreen;
+    box-shadow: 2px 2px 5px;
+}
+
+#changeAvatarButton{
+    margin-top: 10px;
+    background-color: lightseagreen;
+    box-shadow: 2px 2px 5px;
+}
+#howtoplayButton{
+    margin-top: 10px;
+    background-color: lightseagreen;
+    box-shadow: 2px 2px 5px;
+}
+#resetButton{
+    margin-top: 10px;
+    background-color: lightseagreen;
+    box-shadow: 2px 2px 5px;
+}
+
+.plusButton{
+    color: black;
+    background-color: darkgray;
+}
+
+.levelup{
+    grid-area: levelup;
+    display: grid;
+    grid-template-areas: 
+        'activities progressImage'
+}
+
+#activities{
+    grid-area: activities;
+}
+
+#progressImage{
+    grid-area: progressImage;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+#treeImage{
+    width: 150px;
+}
+
+#cookieAgreement{
+    padding-top: 50px;
+    text-align: center;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}

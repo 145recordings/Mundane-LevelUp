@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <title>Mundane: Level Up</title>
+    
+    <link rel="stylesheet" href="styles.css">    
+    
+
+    
+</head>
+    
+<body onload="masterOnLoad()">
+    <header class="header">
+    <img src="images/banner/mundane%20level%20up%20banner.png" class="banner" alt="Mundane: Level Up">    
+    </header>
+    
+    <div class="index-content">
+        <div class="profile">
+            <img id="avatar" src="images/avatars/pixel-none-purple.png" alt="avatar image">
+            <p id="welcome">Welcome, user</p>
+            <p id="level">Level=0</p>
+            <p id="experience">Experience=0</p>
+
+            <div class="options-dropdown">
+                <button type="button" id="optionsButton" onclick="optionsButtonToggle()">Options</button>
+                <div id="options-content">             
+                    <button type="button" id="changeAvatarButton" onclick="changeAvatar()">Change Avatar</button>
+                    <button type="button" id="howtoplayButton" onclick="howtoplayAlert()">How to play</button>
+                    <button type="button" id="resetButton" onclick="resetButton()">Reset</button>
+                </div>
+            </div>    
+
+        </div>
+        <div class="stats">
+            <p class="whiteHeader">Stats</p>
+            <ul class="stats-list">
+                <li id="strength">Strength=0</li>
+                <li id="discipline">Discipline=0</li>
+                <li id="mind">Mind=0</li>
+                <li id="fun">Fun=0</li>
+            </ul>    
+        </div>
+
+        <div class="levelup">
+            <div id="activites">
+                <p class="whiteHeader">Exercise... <button type="button" class="plusButton" onclick="plusStrength()">+</button></p>
+                <p class="whiteHeader">Chores...... <button type="button" class="plusButton" onclick="plusDiscipline()">+</button></p>
+                <p class="whiteHeader">Work........... <button type="button" class="plusButton" onclick="plusDiscipline()">+</button></p>
+                <p class="whiteHeader">Learning... <button type="button" class="plusButton" onclick="plusMind()">+</button></p>
+                <p class="whiteHeader">Fun.............. <button type="button" class="plusButton" onclick="plusFun()">+</button></p>
+            </div>
+            <div id="progressImage"><img id="treeImage" src="images/trees/pixel-level0.png"></div>
+            
+
+        </div>
+        
+    </div>
+    
+    <div id="cookieAgreement">This website uses cookies.<br>
+    These cookies are little bits of data that will store your
+    progress in the game. Click 'Agree' to consent to the use of cookies. Click 'Disagree' and cookies will not be saved. Playing this game requires the use of cookies.<br>
+    <button type="button" class="cookieButtons" onclick="agree()">Agree</button>
+    <button type="button" class="cookieButtons" onclick="disagree()">Disagree</button></div>
+    
+    
+    
+    
+    <script src="scripts.js"></script>
+</body>
+
+
+</html>
