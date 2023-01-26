@@ -1,9 +1,6 @@
-//need to replace all setting cookies to setCookie function
-//and add comments
-
-//version 1.0.0
+//version 1.0.1
 //created by Franklin
-//1-25-2023
+//Updated: 1-26-2023
 
 
 //stats variables
@@ -87,7 +84,6 @@ function getsetAvatar(){
         counter = 1;
         document.cookie = "avatar=" + counter + ";" + expires + ";path=/";
     }
-    console.log("getsetAvatar " + counter);
     setAvatar();
     
 }
@@ -284,8 +280,6 @@ function plusFun(){
 function changeTree(){
     level = getCookie("level");
     level = parseInt(level);
-
-    console.log("level: " + level);
 
     if(level == 0){
         document.getElementById("treeImage").src = "images/trees/pixel-level0.png";

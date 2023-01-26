@@ -3,11 +3,12 @@ body{
     padding: 0;
     margin: 0;
     background-color: pink;
+    overflow-x: hidden;
 }
 
 .header{
     text-align: center;
-    background-image: linear-gradient(teal,pink)
+    background-image: linear-gradient(teal,pink);
 }
 
 .banner{
@@ -16,7 +17,7 @@ body{
 
 .index-content{
     display: grid;
-    width: 375px;
+    width: 350px;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
